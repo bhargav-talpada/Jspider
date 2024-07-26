@@ -13,7 +13,7 @@ public class Exscanner {
         String name = sc.nextLine();
         System.out.println("Enter Your Age : ");
         int age = sc.nextInt();
-        System.out.println("Enter Your Name : ");
+        System.out.println("Enter Your Male : ");
         char gen = sc.next().charAt(0);
         printData(name, age, gen);
     }
