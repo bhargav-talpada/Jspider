@@ -23,10 +23,10 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding-top: 10px;
+        padding: 20px 180px;
     }
     .in-one{
-        width: 270px;
+        width: 330px;
         height: 600px;
         border: 1px solid gray;
     }
@@ -34,7 +34,7 @@
         box-shadow: 0 0 10px gray
     }
     .first .in-one img{
-        height: 200px;
+        height: 180px;
         width: 100%;
     }
     .first .in-one .sec-img{
@@ -67,12 +67,13 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding-top: 10px;
+        padding: 150px 0;
     }
     .sec .in-sec-one{
         height: 400px;
         width: 400px;
         border: 1px solid gray;
+        border-radius: 30px;
         padding: 30px 20px;
     }
     .sec .in-sec-one h1{
@@ -109,6 +110,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 50px 0;
     }
     .third .in-third{
         display: flex;
@@ -116,14 +118,14 @@
         align-items: center;
     }
     .third .in-third img{
-        height: 500px;
+        height: 918px;
         width: 400px;
     }
     .third .in-third .in-third-in{
         width: 40%;
         padding: 20px 50px;
         background-color: white;
-        height: 500px;
+        height: auto;
     }
     .third .in-third .in-third-in p{
         font-size: 15px;
@@ -140,6 +142,14 @@
     .third .in-third .in-third-in h3 span{
         color: #00704a;
     }
+    .third .in-third .in-third-in label{
+        font-size: 13px;
+    }
+    .third .in-third .in-third-in input{
+        width: 100%;
+        height: 30px;
+        margin: 10px 0;
+    }
 </style>
 <body>
     <div class="main">
@@ -147,7 +157,7 @@
         <div class="first">
             <div class="in-one">
                 <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-08/asset-v1_Canada%2BGAFC01%2B2020%2Btype%40asset%2Bblock%40Greener_Apron_1.jpg" alt="img">
-                <div class="in-sec">
+                <div class="in-sec" style="height: 325px;">
                     <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="">
                     <h3>Greener Apron</h3>
                     <p>Walk through what sustainability means at Starbucks and how you can incorporate sustainability in your life.</p>
@@ -179,6 +189,9 @@
                 <button>Select</button>
             </div>
         </div>
+        <div style="display: flex; justify-content: center; margin-top: 50px;">
+            <button style="padding: 10px 20px; border-radius: 50px; cursor: pointer; background-color: #00704a; border: none; color: white; font-weight: 800;">View All Courses</button>
+        </div>
         <div class="sec">
             <div class="in-sec-one">
                 <h1>About Starbucks Global Academy</h1>
@@ -198,6 +211,7 @@
                     <p>There are many pathways to opportunity and success and education is a great one. To get started with taking courses on Starbucks Global Academy, simply enter your name and email in the form below and we will send you updates and a link to your account.</p>
                     <h4>Already have an account?</h4>
                     <h3><span>Sign in</span> to add these courses to your account.</h3>
+<<<<<<< HEAD
                     <label for="">First Name</label>
                     <input type="text"><br>
                     <label for="">Last Name</label>
@@ -211,6 +225,57 @@
                         <option value="">Hong Kong</option>
                         <option value="">Indonasia</option>
                     </select>
+=======
+                    <div style="padding: 20px 0;">
+                        <label for="" >First Name</label><br>
+                        <input type="text"><br>
+                        <label for="">Last Name</label><br>
+                        <input type="text"><br>
+                        <label for="">Email</label><br>
+                        <input type="email" name="" id=""><br>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="">Location</label>
+                                <select name="" id="" style="width: 200px; margin: 10px 0; height: 30px;">
+                                    <option value="">Austraila</option>
+                                    <option value="">India</option>
+                                    <option value="">Hong Kong</option>
+                                    <option value="">Indonasia</option>
+                                </select><br>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <label for="" style="margin-top: -15px;">Phone Number</label>
+                                <input type="number">
+                            </div>
+                        </div>
+                        <label for="">Are you a Starbucks Partner?</label><br>
+                        <select name="" id="" style="width: 100%; margin: 10px 0; height: 30px;">
+                            <option value=""></option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                        </select><br>
+                        <p style="margin-top: 0; font-size: 12px;">Please see the <span style="color: #00704a; text-decoration: underline; cursor: pointer;">terms and conditions</span</p>
+                        <div style="display: flex; align-items: center; width: 100%;">
+                            <input type="checkbox" name="" id="" style="height:15px; width: 15px;"><p style="margin-left: 5px; width: 100%; font-size: 14px; margin-top: 0;">I confirm that I have read and accept the terms and conditions*</p>                            
+                        </div>
+                    </div>
+                    <p style="font-size: 10px; width: 100%;">From time to time we would like to get in contact with you via email to tell you important information related to ASU and the Global Academy, for example the introduction of new learning courses.</p>
+                    <p style="font-size: 10px; width: 100%;">We may also occasionally invite you to take part in market research, or service user feedback. ASU will never share your data with any third party organizations. You can also unsubscribe or change your preference at any time. For more detail about how we use your data, please see <span style="color: #00704a; cursor: pointer; text-decoration: underline;">ASU's privacy statement including the European UnionSupplement.</span></p>
+                    <h4>Would you like to hear from us?*</h4>
+                    <div style="display: flex; align-items: center;">
+                        <div style="display: flex;">
+                            <input type="radio" style="margin-top: 0;" value="Yes">
+                            <label for="Yes" style="margin: 8px 4px;">Yes</label>
+                        </div>
+                        <div style="display: flex; margin-left: 15px;">
+                            <input type="radio" style="margin-top: 0;" value="No">
+                            <label for="No" style="margin: 8px 4px;">No</label>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <button style="padding: 10px 30px; border-radius: 50px; cursor: pointer; background-color: #00704a; border: none; color: white; font-weight: 800;">Next</button>
+                    </div>
+>>>>>>> 1f0cbab (done)
                 </div>
             </div>
         </div>
