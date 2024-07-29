@@ -5,232 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .main{
-        width: 100%;
-    }
-    .main-head{
-        color: #00704a;
-        text-align: center;
-    }
-    .first{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 180px;
-    }
-    .in-one{
-        width: 330px;
-        height: 600px;
-        border: 1px solid gray;
-    }
-    .in-one:hover{
-        box-shadow: 0 0 10px gray
-    }
-    .first .in-one img{
-        height: 180px;
-        width: 100%;
-    }
-    .first .in-one .sec-img{
-        width: 40px;
-        height: 40px;
-    }
-    .first .in-one .in-sec{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-    }
-    .first .in-one .in-sec h3{
-        font-weight: 600;
-    }
-    .first .in-one .in-sec span{
-        font-weight: 200;
-    }
-    .first .in-one button{
-        padding: 10px 20px;
-        border: 1px solid #29413b;
-        color: #29413b;
-        border-radius: 50px;
-        width: 80px;
-        margin-top: 10px;
-        margin-left: 20px;
-    }
-    .sec{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 150px 0;
-    }
-    .sec .in-sec-one{
-        height: 400px;
-        width: 400px;
-        border: 1px solid gray;
-        border-radius: 30px;
-        padding: 30px 20px;
-    }
-    .sec .in-sec-one h1{
-        width: 70%;
-    }
-    .sec .in-sec-one p{
-        margin-top: 20px;
-        width: 90%;
-        line-height: 30px;
-        font-size: 15px;
-    }
-    .sec .in-sec-sec{
-        width: 440px;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0;
-    }
-    .sec .in-sec-sec h1{
-        font-size: 20px;
-        color: #00704a;
-        text-align: center;
-    }
-    .sec .in-sec-sec p{
-        text-align: center;
-        margin-top: 20px;
-    }
-    .sec .in-sec-sec img{
-        width: 500px;
-        height: 300px;
-    }
-    .third{
-        background-color: aliceblue;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 0;
-    }
-    .third .in-third{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .third .in-third img{
-        height: 918px;
-        width: 400px;
-    }
-    .third .in-third .in-third-in{
-        width: 40%;
-        padding: 20px 50px;
-        background-color: white;
-        height: auto;
-        border: 1px solid rgb(11, 183, 183);
-    }
-    .third .in-third .in-third-in p{
-        font-size: 15px;
-        width: 85%;
-        margin-top: 20px;
-    }
-    .third .in-third .in-third-in h4{
-        margin-top: 20px;
-    }
-    .third .in-third .in-third-in h3{
-        font-size: 14px;
-        font-weight: 100;
-    }
-    .third .in-third .in-third-in h3 span{
-        color: #00704a;
-    }
-    .third .in-third .in-third-in label{
-        font-size: 13px;
-    }
-    .third .in-third .in-third-in input{
-        width: 100%;
-        height: 30px;
-        margin: 10px 0;
-    }
-</style>
 <body>
-    <div class="main">
+    <div class="main" style="width: 100%;">
         <div>
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <h1 class="main-head">Featured Courses</h1>
-        <div class="first">
-            <div class="in-one">
-                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-08/asset-v1_Canada%2BGAFC01%2B2020%2Btype%40asset%2Bblock%40Greener_Apron_1.jpg" alt="img">
-                <div class="in-sec" style="height: 325px;">
-                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="">
-                    <h3>Greener Apron</h3>
-                    <hr style="width: 50px; height: 5px; background-color: #00704a;">
+        <h1 class="main-head" style="color: #00704a; text-align: center;">Featured Courses</h1>
+        <div class="first" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px 180px;">
+            <div class="in-one" style="width: 330px; height: 600px; border: 1px solid gray;" onmouseover="this.style.boxShadow='0 0 10px gray'" onmouseout="this.style.boxShadow='none'">
+                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-08/asset-v1_Canada%2BGAFC01%2B2020%2Btype%40asset%2Bblock%40Greener_Apron_1.jpg" alt="img" style="height: 180px; width: 100%;">
+                <div class="in-sec" style="height: 280px; display: flex; flex-direction: column; padding: 20px;">
+                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="" style="width: 40px; height: 40px;">
+                    <h3 style="font-weight: 600;">Greener Apron</h3>
+                    <hr style="width: 50px; height: 5px; background-color: #00704a; margin-left: 0;">
                     <p>Walk through what sustainability means at Starbucks and how you can incorporate sustainability in your life.</p>
-                    <b>Start Date : <Span>Available Now</Span></b>
-                    <b>Duration : <Span>2-3 hours</Span></b>
+                    <b>Start Date : <Span style="font-weight: 200;">Available Now</Span></b>
+                    <b>Duration : <Span style="font-weight: 200;">2-3 hours</Span></b>
                 </div>
-                <button>Select</button>
+                <button style="padding: 10px 20px; font-weight: 800; border: 1px solid #29413b; color: #00704a; border-radius: 50px; width: 100px; margin-top: 10px; margin-left: 20px;">Select</button>
             </div>
-            <div class="in-one">
-                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2022-12/asset-v1_ASU%2BGSP01%2B2022%2Btype%40asset%2Bblock%40GSP_Banner_collage_-1.png" alt="img">
-                <div class="in-sec">
-                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="">
-                    <h3>Greener Stores for Practitioners</h3>
-                    <hr style="width: 50px; height: 5px; background-color: #00704a;">
-                    <p>Deepen your knowledge about leadership in sustainability in the retail built environment as a store manager, architect, designer or sustainability practitioner.</p>
-                    <b>Start Date : <Span>Available Now</Span></b>
-                    <b>Duration : <Span>4-6 hours</Span></b>
+            <div class="in-one" style="width: 330px; height: 600px; border: 1px solid gray;" onmouseover="this.style.boxShadow='0 0 10px gray'" onmouseout="this.style.boxShadow='none'">
+                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-08/asset-v1_Canada%2BGAFC01%2B2020%2Btype%40asset%2Bblock%40Greener_Apron_1.jpg" alt="img" style="height: 180px; width: 100%;">
+                <div class="in-sec" style="height: 280px; display: flex; flex-direction: column; padding: 20px;">
+                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="" style="width: 40px; height: 40px;">
+                    <h3 style="font-weight: 600;">Greener Apron</h3>
+                    <hr style="width: 50px; height: 5px; background-color: #00704a; margin-left: 0;">
+                    <p>Walk through what sustainability means at Starbucks and how you can incorporate sustainability in your life.</p>
+                    <b>Start Date : <Span style="font-weight: 200;">Available Now</Span></b>
+                    <b>Duration : <Span style="font-weight: 200;">2-3 hours</Span></b>
                 </div>
-                <button>Select</button>
+                <button style="padding: 10px 20px; font-weight: 800; border: 1px solid #29413b; color: #29413b; border-radius: 50px; width: 100px; margin-top: 10px; margin-left: 20px;">Select</button>
             </div>
-            <div class="in-one">
-                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2022-10/asset-v1_ASU%2BCCB01%2B2022%2Btype%40asset%2Bblock%40CCB01_Course_Card_Image.min_.jpg" alt="img">
-                <div class="in-sec">
-                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="">
-                    <h3>Community Champion: Fundamentals</h3>
-                    <hr style="width: 50px; height: 5px; background-color: #00704a;">
-                    <p>Become a community champion and gain a strong foundation to understand yourself, communities, and the various nonprofits that work in our communities. </p>
-                    <b>Start Date : <Span>Available Now</Span></b>
-                    <b>Duration : <Span>2-3 hours</Span></b>
+            <div class="in-one" style="width: 330px; height: 600px; border: 1px solid gray;" onmouseover="this.style.boxShadow='0 0 10px gray'" onmouseout="this.style.boxShadow='none'">
+                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-08/asset-v1_Canada%2BGAFC01%2B2020%2Btype%40asset%2Bblock%40Greener_Apron_1.jpg" alt="img" style="height: 180px; width: 100%;">
+                <div class="in-sec" style="height: 280px; display: flex; flex-direction: column; padding: 20px;">
+                    <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_pursuit_green_6.png" class="sec-img" alt="" style="width: 40px; height: 40px;">
+                    <h3 style="font-weight: 600;">Greener Apron</h3>
+                    <hr style="width: 50px; height: 5px; background-color: #00704a; margin-left: 0;">
+                    <p>Walk through what sustainability means at Starbucks and how you can incorporate sustainability in your life.</p>
+                    <b>Start Date : <Span style="font-weight: 200;">Available Now</Span></b>
+                    <b>Duration : <Span style="font-weight: 200;">2-3 hours</Span></b>
                 </div>
-                <button>Select</button>
+                <button style="padding: 10px 20px; font-weight: 800; border: 1px solid #29413b; color: #29413b; border-radius: 50px; width: 100px; margin-top: 10px; margin-left: 20px;">Select</button>
             </div>
         </div>
         <div style="display: flex; justify-content: center; margin-top: 50px;">
             <button style="padding: 10px 20px; border-radius: 50px; cursor: pointer; background-color: #00704a; border: none; color: white; font-weight: 800;">View All Courses</button>
         </div>
-        <div class="sec">
-            <div class="in-sec-one">
-                <h1>About Starbucks Global Academy</h1>
-                <p>Starbucks Global Academy provides curriculum organized by Starbucks areas of passion and expertise, in partnership with Arizona State University. Courses are available on any device, at any time, and at no cost to you! Discover and explore the topics that align to your personal or professional growth and development. Then, use what you learn to promote more open conversations, build stronger connections, and do good in your community.</p>
+        <div class="sec" style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 150px 0;">
+            <div class="in-sec-one" style="height: 400px; width: 400px; border: 1px solid gray; border-radius: 30px; padding: 30px 20px;">
+                <h1 style="width: 70%;">About Starbucks Global Academy</h1>
+                <p style="margin-top: 20px; width: 90%; line-height: 30px; font-size: 15px;">Starbucks Global Academy provides curriculum organized by Starbucks areas of passion and expertise, in partnership with Arizona State University. Courses are available on any device, at any time, and at no cost to you! Discover and explore the topics that align to your personal or professional growth and development. Then, use what you learn to promote more open conversations, build stronger connections, and do good in your community.</p>
             </div>
-            <div class="in-sec-sec">
-                <h1>Join our global community of learners</h1>
-                <p>Over 100k people have joined our community – you can too!</p>
-                <img src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_Homepage_Global_Map_0.png" alt="img">
+            <div class="in-sec-sec" style="width: 440px; display: flex; flex-direction: column; padding: 10px 0;">
+                <h1 style="font-size: 20px; color: #00704a; text-align: center;">Join our global community of learners</h1>
+                <p style="text-align: center; margin-top: 20px;">Over 100k people have joined our community – you can too!</p>
+                <img style="width: 500px; height: 300px;" src="https://live-sgacms.ws.asu.edu/sites/default/files/2023-02/SGA_Homepage_Global_Map_0.png" alt="img">
             </div>
         </div>
-        <div class="third">
-            <div class="in-third">
-                <img src="https://starbucksglobalacademy.com/assets/img/rfi-image-small.f3033d5a.png" alt="">
-                <div class="in-third-in">
+        <div class="third" style="background-color: aliceblue; width: 100%; display: flex; justify-content: center; align-items: center; padding: 50px 0;">
+            <div class="in-third" style="display: flex; justify-content: center; align-items: center;">
+                <img style="height: 980px; width: 510px;" src="https://starbucksglobalacademy.com/assets/img/rfi-image-small.f3033d5a.png" alt="">
+                <div class="in-third-in" style="width: 33%; padding: 20px 50px; background-color: white; height: auto; border: 1px solid rgb(11, 183, 183);">
                     <h1>Take courses today</h1>
-                    <p>There are many pathways to opportunity and success and education is a great one. To get started with taking courses on Starbucks Global Academy, simply enter your name and email in the form below and we will send you updates and a link to your account.</p>
-                    <h4>Already have an account?</h4>
-                    <h3><span>Sign in</span> to add these courses to your account.</h3>
+                    <p style="font-size: 15px; width: 85%; margin-top: 20px;">There are many pathways to opportunity and success and education is a great one. To get started with taking courses on Starbucks Global Academy, simply enter your name and email in the form below and we will send you updates and a link to your account.</p>
+                    <h4 style="margin-top: 20px;">Already have an account?</h4>
+                    <h3 style="font-size: 14px; font-weight: 100;"><span style="color: #00704a;">Sign in</span> to add these courses to your account.</h3>
                     <div style="padding: 20px 0;">
-                        <label for="" >First Name</label><br>
-                        <input type="text"><br>
-                        <label for="">Last Name</label><br>
-                        <input type="text"><br>
-                        <label for="">Email</label><br>
-                        <input type="email" name="" id=""><br>
+                        <label for="" style="font-size: 13px;">First Name</label><br>
+                        <input type="text" style="width: 100%; height: 30px; margin: 10px 0;"><br>
+                        <label for="" style="font-size: 13px;">Last Name</label><br>
+                        <input type="text" style="width: 100%; height: 30px; margin: 10px 0;"><br>
+                        <label for="" style="font-size: 13px;">Email</label><br>
+                        <input type="email" style="width: 100%; height: 30px; margin: 10px 0;"><br>
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; flex-direction: column;">
-                                <label for="">Location</label>
-                                <select name="" id="" style="width: 150px; margin: 10px 0; height: 30px;">
+                                <label for="" style="font-size: 13px;">Location</label>
+                                <select name="" id="" style="width: 200px; margin: 10px 0; height: 30px;">
                                     <option value="">Austraila</option>
                                     <option value="">India</option>
                                     <option value="">Hong Kong</option>
@@ -238,18 +91,18 @@
                                 </select><br>
                             </div>
                             <div style="display: flex; flex-direction: column;">
-                                <label for="" style="margin-top: -15px;">Phone Number</label>
+                                <label for="" style="margin-top: -15px; font-size: 13px;">Phone Number</label>
                                 <div style="display: flex;">
-                                    <select style="width: 50px; margin: 10px 0; height: 30px;" name="" id="">
+                                    <select style="width: 50px; margin: 10px 0; height: 35px;" name="" id="">
                                         <option value="">+ 91</option>
                                         <option value="">+ 91</option>
                                         <option value="">+ 91</option>
                                     </select><br>
-                                    <input style="width: 150px;" type="number">
+                                    <input style="width: 150px; height: 30px; margin: 10px 0;" type="number">
                                 </div>
                             </div>
                         </div>
-                        <label for="">Are you a Starbucks Partner?</label><br>
+                        <label for="" style="font-size: 13px;">Are you a Starbucks Partner?</label><br>
                         <select name="" id="" style="width: 100%; margin: 10px 0; height: 30px;">
                             <option value=""></option>
                             <option value="">Yes</option>
@@ -257,7 +110,7 @@
                         </select><br>
                         <p style="margin-top: 0; font-size: 12px;">Please see the <span style="color: #00704a; text-decoration: underline; cursor: pointer;">terms and conditions</span</p>
                         <div style="display: flex; align-items: center; width: 100%;">
-                            <input type="checkbox" name="" id="" style="height:15px; width: 15px;"><p style="margin-left: 5px; width: 100%; font-size: 14px; margin-top: 0;">I confirm that I have read and accept the terms and conditions*</p>                            
+                            <input type="checkbox" name="" id="" style="height:15px; width: 15px;"><p style="margin-left: 5px; width: 100%; font-size: 14px;">I confirm that I have read and accept the terms and conditions*</p>                            
                         </div>
                     </div>
                     <p style="font-size: 10px; width: 100%;">From time to time we would like to get in contact with you via email to tell you important information related to ASU and the Global Academy, for example the introduction of new learning courses.</p>
