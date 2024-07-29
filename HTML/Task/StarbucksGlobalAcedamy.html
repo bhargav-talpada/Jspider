@@ -126,6 +126,7 @@
         padding: 20px 50px;
         background-color: white;
         height: auto;
+        border: 1px solid rgb(11, 183, 183);
     }
     .third .in-third .in-third-in p{
         font-size: 15px;
@@ -221,7 +222,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; flex-direction: column;">
                                 <label for="">Location</label>
-                                <select name="" id="" style="width: 200px; margin: 10px 0; height: 30px;">
+                                <select name="" id="" style="width: 150px; margin: 10px 0; height: 30px;">
                                     <option value="">Austraila</option>
                                     <option value="">India</option>
                                     <option value="">Hong Kong</option>
@@ -230,7 +231,14 @@
                             </div>
                             <div style="display: flex; flex-direction: column;">
                                 <label for="" style="margin-top: -15px;">Phone Number</label>
-                                <input type="number">
+                                <div style="display: flex;">
+                                    <select style="width: 50px; margin: 10px 0; height: 30px;" name="" id="">
+                                        <option value="">+ 91</option>
+                                        <option value="">+ 91</option>
+                                        <option value="">+ 91</option>
+                                    </select><br>
+                                    <input style="width: 150px;" type="number">
+                                </div>
                             </div>
                         </div>
                         <label for="">Are you a Starbucks Partner?</label><br>
