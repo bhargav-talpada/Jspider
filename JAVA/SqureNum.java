@@ -11,7 +11,9 @@ public class SqureNum {
                 c++;
                 break;
             }
-
+            if(i*i>n){
+                break;
+            }
         }
         System.out.println(c==1?"Squre No":"Not Squre No");
     }
