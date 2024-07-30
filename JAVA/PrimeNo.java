@@ -1,3 +1,5 @@
+// A number has a only 2 factors is a Prime Number
+
 import java.util.Scanner;
 
 public class PrimeNo {
