@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    h1, h2, h3, h4{
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        text-align: center;
+        margin: 50px;
+        transition: 2s ease-in-out;
+    }
+    h1:hover{
+        transform: rotate(360deg);
+    }
+    h2:hover{
+        transform: translate(500px, 500px);
+    }
+    h3:hover{
+        transform: scale(1.5);
+    }
+    h4:hover{
+        transform: skew(180deg);
+    }
+</style>
+<body style="display: flex; justify-content: space-around;">
+    <h1>Bhargav</h1>
+    <h2>Bhargav</h2>
+    <h3>Bhargav</h3>
+    <h4>Bhargav</h4>
+</body>
+</html>
