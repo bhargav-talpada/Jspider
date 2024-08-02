@@ -6,12 +6,11 @@ public class Fizzbuzz {
         int n = sc.nextInt();
         int sum = 0;
         int f = 0;
-        int l = 0;
 
-        for (int i = 0; i <n; i++) {
+        while (n!=0) {
             f = n%10;
             sum = sum + f;
-            l = n / 10;
+            n = n / 10;
         }
         System.out.println(sum);
         if(sum%5==0 && sum%3==0){
