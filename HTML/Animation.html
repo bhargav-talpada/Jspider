@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    h1{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        padding: 25px;
+        margin: 50px 50px;
+        border-radius: 100px;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes bounce {
+        from{
+            transform: translateY(0);
+            transform: scale(0);
+        }
+        to{
+            transform: translateY(100px);
+            transform: scale(1);
+        }
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        padding: 30px;
+        border-radius: 100px;
+        margin: 20px 500px;
+        animation-name: spinner;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+    }
+    @keyframes spinner {
+        /* from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        } */
+        0%{
+            transform: rotate(0deg);
+            transform: scale(1);
+            border-bottom: 10px solid cyan;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+        }
+        25%{
+            transform: rotate(90deg);
+            transform: scale(1.5);
+            border-left: 10px solid cyan;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+        }
+        50%{
+            transform: rotate(180deg);
+            transform: scale(2);
+            border-top: 10px solid cyan;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+        }
+        75%{
+            transform: rotate(270deg);
+            transform: scale(1.5);
+            border-right: 10px solid cyan;
+            border-bottom: none;
+            border-left: none;
+            border-top: none;
+        }
+        100%{
+            transform: rotate(360deg);
+            transform: scale(1);
+            border-bottom: 10px solid cyan;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+        }
+    }
+</style>
+<body>
+    <h1>Hello</h1>
+    <div></div>
+</body>
+</html>
