@@ -8,12 +8,12 @@ public class ArmstrongNum {
         n = s.nextInt();
         a = n;
         c = n;
-        while(a > 0)
+        while(a != 0)
         {
             a = a / 10;
             count++;
         }
-        while(n > 0)
+        while(n != 0)
         {
             rem = n % 10;
             sum = (int) (sum+Math.pow(rem, count));
