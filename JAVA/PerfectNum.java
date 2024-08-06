@@ -1,3 +1,5 @@
+// sum of factors but except itself is a equal to number is a Perfect num...
+
 import java.util.Scanner;
 
 public class PerfectNum {

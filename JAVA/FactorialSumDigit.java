@@ -1,3 +1,5 @@
+// Sum of Factorial number of each digit of given num is eqaul to original number is a Strong num...
+
 import java.util.Scanner;
 
 public class FactorialSumDigit {

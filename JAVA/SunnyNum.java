@@ -1,3 +1,5 @@
+// to add 1 on given number and that number is perfect squere number is a Sunny Num...
+
 import java.util.Scanner;
 
 public class SunnyNum {
