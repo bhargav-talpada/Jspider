@@ -15,8 +15,8 @@ public class ArmstrongMethod {
         int a = n, b = n;
         int rem = 0, sum = 0, c = 0;
         while (a!=0) {
-            a = a / 10;
             c++;
+            a = a / 10;
         }
         while (n!=0) {
             rem = n % 10;
