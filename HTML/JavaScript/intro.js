@@ -1,3 +1,4 @@
+hoisting
 a = 10; // initialize
 var a;  // Declare
 console.log(a);
