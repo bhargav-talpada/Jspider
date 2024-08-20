@@ -1,12 +1,12 @@
-let num = 100;
-let c = 0;
-for(let i=0; i<=num; i++){
-    if (num%i == 0) {
-        c++;
-    }    
-    if (c == 2) {
+for(let i=2; i<=100; i++){
+    let isPrime = true;
+    for(let j=2; j<i; j++){
+        if(i%j === 0){
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
         console.log(i);
-        
     }
 }
-off

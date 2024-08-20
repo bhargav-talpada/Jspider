@@ -1,5 +1,5 @@
 let nm = "Bhargav";
-let age = 21;
+let age = 31;
 let email = "bhargav@gmail.com";
 let pwd = 123456;
 let phone = 9987456321;
