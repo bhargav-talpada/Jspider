@@ -1,3 +1,4 @@
+off
 let arr = [11, "bhargav", 1.1, true, ["talpada", 44, null, undefined], 'talpada'];
 console.log(arr);
 // console.log(arr.length);
