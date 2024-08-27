@@ -27,3 +27,21 @@ let str = "string in js";
 // ---------- chatAt -> if gives element of specific index number ----------
 // let c = str.charAt(10);
 // console.log(c);
+
+// ---------- split -> it creates a new sub array and pass the saparetor of values
+// let subA = str.split("");
+// console.log(subA);
+
+//  ---------- replace -> replace the specific char to given char
+// let c = str.replace("i", 1);
+// console.log(c);
+
+//  ---------- replaceAll -> replace multiple char 
+// let c = str.replaceAll("i", 0);
+// console.log(c);
+
+// ---------- concatination -> to 
+
+// tamplate literals -> 
+let a = 20;
+console.log(`javascript ${a} string`);
