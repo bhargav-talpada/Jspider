@@ -40,7 +40,7 @@ let str = "string in js";
 // let c = str.replaceAll("i", 0);
 // console.log(c);
 
-// ---------- concatination -> to 
+// ---------- concatination -> to merge to string
 
 // tamplate literals -> 
 let a = 20;
