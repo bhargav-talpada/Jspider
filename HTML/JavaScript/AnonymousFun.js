@@ -1,6 +1,6 @@
 // Anonymous function - function without function name....
 // function can not call/invoked without calling function name...
-// to call the anonymous function 2 ways : 
+// to call the anonymous function 2 ways
 
 
 // 1. IIFE - Immediate Invoked Function Expression
