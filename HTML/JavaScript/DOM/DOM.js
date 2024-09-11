@@ -15,3 +15,19 @@ console.log(body);
 
 body.appendChild(h1);
 body.appendChild(img);
+
+let h3 = document.createElement('h3');
+h3.innerHTML = "Document Object Model";
+console.log(h3);
+
+body.appendChild(h3);
+
+let input = document.createElement('input');
+input.placeholder = "Enter Name";
+console.log(input);
+body.appendChild(input);
+
+let p = document.getElementsByClassName('para');
+p[0].innerText = "i am para tag";
+p[1].textContent = "i am div";
+console.log(p);
