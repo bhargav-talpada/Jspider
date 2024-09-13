@@ -1,6 +1,6 @@
 let str = "string in js";
 
-//---------- slice -> it give specific string from start index to end index ----------
+//---------- slice -> it give specific string element from start index to end index ----------
 // let sub = str.slice(5, 9);
 // console.log(sub);
 
