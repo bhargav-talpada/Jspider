@@ -1,11 +1,3 @@
-// async function data() {
-//     let data = await fetch('https://jsonplaceholder.typicode.com/photos');
-//     let jsonRes = await data.json();
-//     console.log(jsonRes);   
-// }
-// data();
-
-
 fetch('https://jsonplaceholder.typicode.com/photos')
 .then(res => res.json())
 .then(pic => {

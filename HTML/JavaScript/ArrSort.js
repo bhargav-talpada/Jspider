@@ -10,3 +10,11 @@ for(let i=0; i<arr.length; i++){
     }
 }
 console.log(arr);
+
+// sort() -> to sort the given array
+
+let newArr = arr.sort((a,b) => {
+    // return a-b;  // assending order
+    return b-a;  // decending order
+})
+console.log(newArr);
