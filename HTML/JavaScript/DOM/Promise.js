@@ -24,3 +24,4 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 .catch((err) => {
     console.log(err);
 })
+off
