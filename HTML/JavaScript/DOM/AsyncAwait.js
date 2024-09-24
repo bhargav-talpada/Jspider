@@ -1,4 +1,3 @@
-off
 data();
 async function data() {
     let body = document.getElementById('img-container');
