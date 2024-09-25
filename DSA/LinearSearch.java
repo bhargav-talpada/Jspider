@@ -1,3 +1,5 @@
+// Linear search work on sorted or un-sorted array....
+
 package DSA;
 
 public class LinearSearch {
