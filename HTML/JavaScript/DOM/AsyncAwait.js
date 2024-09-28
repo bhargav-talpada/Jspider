@@ -1,4 +1,5 @@
-data();
+off
+    data();
 async function data() {
     let body = document.getElementById('img-container');
     let data = await fetch('https://jsonplaceholder.typicode.com/photos');
