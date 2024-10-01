@@ -72,7 +72,7 @@ public class StackImpl {
         top = -1;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of stack : ");
         int size = sc.nextInt();

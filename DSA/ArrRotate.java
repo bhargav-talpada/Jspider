@@ -28,10 +28,11 @@ public class ArrRotate {
         }
         System.out.println();
         System.out.println("==========");
+        int[] arr2 = {2, 1, 4, 8, 6, 7, 3};
         for(int i=1; i<=k; i++){
-            RotateLeft(arr);
+            RotateLeft(arr2);
         }
-        for(int ele : arr){
+        for(int ele : arr2){
             System.out.print(ele+" ");
         }
     }
