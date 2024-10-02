@@ -31,10 +31,10 @@ console.log(input);
 body.appendChild(input);
 
 // ------ getElementsByClassName :- to select any element using className
-let p = document.getElementsByClassName('para');
-p[0].innerText = "i am para tag";
-p[1].textContent = "i am div";
-console.log(p);
+// let p = document.getElementsByClassName('para');
+// p[0].innerText = "i am para tag";
+// p[1].textContent = "i am div";
+// console.log(p);
 
 // ------ getElementsByTagName :- to select any element using tagName
 let b = document.getElementsByTagName('b');
@@ -47,5 +47,9 @@ let q = document.querySelector('b');
 console.log(q);
 
 // ------ querySelectorAll :- to select any element using id, class, tag name and it gives all element as a collection
-let qa = document.querySelectorAll('.para');
-console.log(qa);
+// let qa = document.querySelectorAll('.para');
+// console.log(qa);
+
+let h=document.getElementsByName('h')
+console.log(h);
+

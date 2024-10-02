@@ -1,6 +1,6 @@
 public class accendingNum {
     public static void main(String[] args) {
-        int n = 1234567;
+        int n = 2134567;
         int count = 0;
         int rem1;
 
