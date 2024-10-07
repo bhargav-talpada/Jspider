@@ -51,20 +51,41 @@ public class QueueImpl {
         }
     }
     public static void main(String[] args) {
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter size of queue : ");
+        // int size = sc.nextInt();
+        // CreateQueue(size);
+        // display();
+        // for(int i=0; i<queue.length; i++){
+        //     System.out.println("Enter queue element : ");
+        //     int ele = sc.nextInt();
+        //     enQueue(ele);
+        // }
+        // display();
+        // deQueue();
+        // display();
+        // deQueue();
+        // display();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter size of queue : ");
+        System.out.println("Enter the size of stack : ");
         int size = sc.nextInt();
         CreateQueue(size);
-        display();
-        for(int i=0; i<queue.length; i++){
-            System.out.println("Enter queue element : ");
-            int ele = sc.nextInt();
-            enQueue(ele);
+        while (true) {
+            System.out.println("===== Menu =====");
+            System.out.println("1.Enqueue\n2.Dequeue\n3.Display\n4.Exit");
+            System.out.println("Enter Your Option :- ");
+            int op = sc.nextInt();
+            switch (op) {
+                case 1: 
+                    System.out.println("Enter the element : ");
+                    int ele = sc.nextInt();
+                    enQueue(ele);
+                break;
+                case 2: deQueue(); break;
+                case 3: display(); break;
+                case 4: System.out.println("Thank You...!!"); System.exit(0);
+                default: System.out.println("Invalid Operation..."); break;
+            }
         }
-        display();
-        deQueue();
-        display();
-        deQueue();
-        display();
     }
 }
