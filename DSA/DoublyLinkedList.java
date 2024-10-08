@@ -3,27 +3,27 @@ package DSA;
 import java.util.Scanner;
 
 class Node {
-    int data;
     Node next;
+    int data;
+    Node prev;
 
     Node(int data){
         this.data = data;
     }
 }
-
-public class LinkedListImpl {
+public class DoublyLinkedList {
     static Node head;
+    static Node tail;
     public static void insert(int ele){
         Node n = new Node(ele);
         if (head == null) {
             head = n;
+            tail = n;
         }
         else{
-            Node temp = head;
-            while (temp.next != null) {
-                temp = temp.next;
-            }
-            temp.next = n;
+            tail.next = n;
+            n.prev = tail;
+            tail = n;
         }
         System.out.println(ele+" has been inserted...");
     }
@@ -36,8 +36,24 @@ public class LinkedListImpl {
         else{
             Node temp = head;
             while (temp.next != null) {
-                System.out.print(temp.data+ " -> ");
+                System.out.print(temp.data+ " --> ");
                 temp = temp.next;
+            }
+            System.out.println(temp.data);
+        }
+        System.out.println("====================================================");
+    }
+
+    public static void displayReverse(){
+        System.out.println("================= LinkedList data ==================");
+        if (head == null) {
+            System.out.println("LinkedList is empty....");
+        }
+        else{
+            Node temp = tail;
+            while (temp.prev != null) {
+                System.out.print(temp.data+ " --> ");
+                temp = temp.prev;
             }
             System.out.println(temp.data);
         }
@@ -84,23 +100,13 @@ public class LinkedListImpl {
         }
     }
 
-    public static void reverse(){
-        Node curr = head, prev = null, temp = null;
-        while (curr != null) {
-            temp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = temp;
-        }
-        head = prev;
-    }
     public static void main(String[] args) {
         // LinkedListImpl li = new LinkedListImpl();
 
         Scanner sc = new Scanner(System.in);
             while (true) {
             System.out.println("===== Menu =====");
-            System.out.println("1.Insert\n2.InsertFront\n3.Display\n4.Delete\n5.DeleteFront\n6.Exit\n7.Reserve");
+            System.out.println("1.Insert\n2.InsertFront\n3.Display\n4.DisplayReverse\n5.Delete\n6.DeleteFront\n7.Exit");
             System.out.println("Enter Your Option :- ");
             int op = sc.nextInt();
             switch (op) {
@@ -114,10 +120,10 @@ public class LinkedListImpl {
                     int ele2 = sc.nextInt();
                     insertFront(ele2); break;
                 case 3: display(); break;
-                case 4: delete(); break;
-                case 5: deleteFront(); break;
-                case 6: System.out.println("Thank You...!!"); System.exit(0);
-                case 7: reverse(); break;
+                case 4: displayReverse(); break;
+                case 5: delete(); break;
+                case 6: deleteFront();; break;
+                case 7: System.out.println("Thank You...!!"); System.exit(0);
                 default: System.out.println("Invalid Operation..."); break;
             }
         }
