@@ -2,8 +2,8 @@ package DSA;
 
 import java.util.Arrays;
 
-public class Merge2ArrInSort {
-    
+public class Merge2SortArr {
+
     public static int[] mergeSortedArrays(int[] arr1, int[] arr2) {
         int n1 = arr1.length;
         int n2 = arr2.length;
@@ -30,12 +30,29 @@ public class Merge2ArrInSort {
         return mergedArray;
     }
 
+    public static int[] sortArry(int[] arr){
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr.length-1; j++){
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+
+        return arr;
+    }
+
     public static void main(String[] args) {
-        int[] arr1 = {11, 12, 14, 85};
-        int[] arr2 = {1, 5, 7, 20, 55};
+        int[] arr1 = { 86, 14, 12, 2 };
+        int[] arr2 = { 55, 20, 27, 5, 11 };
+
+        arr1 = sortArry(arr1);
+        arr2 = sortArry(arr2);
 
         int[] mergedArray = mergeSortedArrays(arr1, arr2);
-        
+
         System.out.println("Merged Sorted Array: " + Arrays.toString(mergedArray));
     }
 }

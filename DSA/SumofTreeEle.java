@@ -2,11 +2,6 @@ package DSA;
 
 // sum of tree element from starting point to ending point.......
 
-// assignment : to merge two array in sorted manner
-// arr1 - 3,10,11
-// arr2 - 2,6,12,15
-// ans - 2,3,6,10,11,12,15
-
 class Node {
     int data;
     Node left;
