@@ -1,5 +1,5 @@
 package DSA;
-off
+
 public class ArrRotate {
     public static void RotateRight(int[] arr){
         int temp = arr[arr.length-1];
